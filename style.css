@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #22254b; */
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #373b69;
+    display: block;
+    /* justify-content: flex-end; */
+    padding: 1rem;
+}
+
+form{
+    display: inline-block;
+    position: absolute;
+    left: 500px;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    
+}
+
+.search::placeholder {
+    color: #7378c5;
+}
+
+.search:focus {
+    background-color: #22254b;
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stockMarket {
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 100px;
+    height: 100px
+}
+
+.stockMarket:hover{
+    cursor: pointer;
+}
+
+/* .stockMarket img {
+    width: 100%;
+} */
+
+.stockMarket-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.stockMarket-info h3 {
+    font-size:20px;
+}
+
+.stockMarket-info span {
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+
+nav {
+    /* background-color: #f6ecf0; */
+    padding: 20px;
+    display: inline-block;
+    left: 0;
+    transition: width 0.6s linear;
+}
+
+nav.active {
+    width: 200px;
+    font-family:sans-serif;
+    font-weight:700;
+    color: rgb(229, 97, 15);
+    font-size: 1.5rem;
+}
+
+nav.active:hover{
+    cursor: pointer;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+.recommendcontent{
+    margin-left: 50px;
+}
+
+.recommendcontent img{
+    padding: 50px;
+}
+
+.seasoncontent{
+    padding-left: 20px;
+}
+.tag {
+    background-color: #0e49b5;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0 5px 10px 0;
+    font-size: 14px;
+    display: inline-block;
+    box-shadow: 2px 2px 6px rgba(0 ,0, 0, 0.4);
+
+}
+
+.tag.highlight {
+    background-color: #c62a88;
+}
+
+.tag:hover{
+    cursor: pointer;
+    color: #e47328;
+}
+
+#footer{
+    padding:64px 16px;
+    text-align: center;
+}
+
+.modal{
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.3);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.kinetic {
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+.kinetic::after, 
+.kinetic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: #ffffff;
+    animation: rotateA 2s linear infinite 0.5s;
+}
+
+.kinetic::before {
+    transform: rotate(90deg);
+    animation: rotateB 2s linear infinite;
+
+}
+
+@keyframes rotateA {
+    0%, 25% {
+        transform: rotate(0deg);
+    }
+
+    50%, 75% {
+        transform: rotate(180deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateB {
+    0%, 25% {
+        transform: rotate(90deg);
+    }
+
+    50%, 75% {
+        transform: rotate(270deg);
+    }
+    
+    100% {
+        transform: rotate(450deg);
+    }
+}

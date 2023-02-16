@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stock Market Prediction</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.12.1/dist/ort.min.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="active" id="nav">
+                <div class="main-page">All Stocks</div>
+            </nav>
+            <form id="form">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search symbol"
+                    class="search"
+                />
+            </form>
+            
+        </header>
+        <main id="main">
+            
+        </main>
+
+
+        <div id="footer"></div>
+        <div class="modal">
+            <div class="kinetic"></div> 
+        </div>
+    </body>
+</html>
